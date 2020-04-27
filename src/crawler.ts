@@ -29,6 +29,7 @@ export class Crawler {
     page: puppeteer.Page,
     path: string,
   ): Promise<void> {
+    console.log(`Links to crawl: ${this.mutableLinksToCrawl.length}`);
     if (path === undefined) {
       console.log('Done crawling site');
 
