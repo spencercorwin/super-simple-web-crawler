@@ -1,0 +1,35 @@
+{
+  "name": "super-simple-web-crawler",
+  "version": "0.1.0",
+  "description": "Super simple web-crawler",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=10.16.0"
+  },
+  "keywords": [
+    "crawler",
+    "bot"
+  ],
+  "files": [
+    "bin",
+    "dist",
+    "package.json"
+  ],
+  "author": "Spencer Corwin",
+  "license": "MIT",
+  "dependencies": {
+    "@types/cheerio": "0.22.18",
+    "@types/node": "13.13.4",
+    "@types/puppeteer": "2.0.1",
+    "cheerio": "1.0.0-rc.3",
+    "commander": "5.1.0",
+    "events": "3.1.0",
+    "puppeteer": "3.0.1"
+  },
+  "bin": {
+    "crawl": "bin/crawl"
+  }
+}
